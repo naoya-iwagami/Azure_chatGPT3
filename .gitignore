@@ -1,8 +1,6 @@
 # 仮想環境フォルダ
 env/
-
-# VScodeフォルダ
-.vscode/
+Set-AzureEnv.ps1
 
 # Pythonのキャッシュファイル
 __pycache__/
@@ -11,11 +9,10 @@ __pycache__/
 # 特定のOS固有のファイル
 .DS_Store  # macOSの不要ファイル
 Thumbs.db  # Windowsの不要ファイル
+chat_history.json
 
 # ログファイル
 *.log
 
 # 機密情報
 *.env
-
-multi_chatGPT1.py
