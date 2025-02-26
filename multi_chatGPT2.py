@@ -14,7 +14,7 @@ from PIL import Image
 import certifi    
 import tiktoken    
 
-  
+
 # Azure OpenAIの設定    
 client = AzureOpenAI(    
     api_key=os.getenv("AZURE_OPENAI_KEY"),    
@@ -249,7 +249,8 @@ def main():
     # インデックス内のデータを検索する関数    
     def keyword_semantic_search(query, topNDocuments=5, strictness=0.1):    
         results = search_client.search(    
-            search_text=query,    
+            search_text=query,
+            search_fields=["content"],  
             select="content",    
             query_type="semantic",    
             semantic_configuration_name="default",    

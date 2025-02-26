@@ -2,6 +2,9 @@
 env/
 Set-AzureEnv.ps1
 
+# VScodeフォルダ
+.vscode/
+
 # Pythonのキャッシュファイル
 __pycache__/
 *.pyc
