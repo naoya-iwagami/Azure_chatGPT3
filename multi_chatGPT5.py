@@ -14,8 +14,6 @@ from PIL import Image
 import certifi  
 import tiktoken  
 
-os.environ['HTTP_PROXY'] = 'http://g3.konicaminolta.jp:8080'
-os.environ['HTTPS_PROXY'] = 'http://g3.konicaminolta.jp:8080'
 
 # Azure OpenAIの設定  
 client = AzureOpenAI(  
